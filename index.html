@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <title>Библиотека мифов</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Анимированный фон: звёзды, туман и светящиеся частицы -->
+  <div class="stars-bg" aria-hidden="true"></div>
+
+  <div class="page-wrapper">
+
+    <!-- ========== HEADER ========== -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <div>
+          <a href="index.html" class="site-title">Библиотека мифов</a>
+          <p class="site-subtitle">Мифы и легенды народов мира</p>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html" class="active">Главная</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ========== ГЛАВНЫЙ ЭКРАН ========== -->
+    <section class="hero">
+      <h1 class="hero-title">Библиотека мифов</h1>
+      <p class="hero-description">
+        Собрание древних преданий, забытых легенд и мифов народов мира.
+        Погрузитесь в мир тайн, где боги спорят с героями, а звёзды хранят память веков.
+      </p>
+      <a href="#myths" class="scroll-btn" aria-label="Перейти к мифам">
+        Открыть свитки
+        <span class="scroll-arrow"></span>
+      </a>
+    </section>
+
+    <!-- ========== РАЗДЕЛ МИФОВ ========== -->
+    <section class="myths-section" id="myths">
+      <div class="container">
+
+        <h2 class="section-title">Свитки преданий</h2>
+        <p class="section-subtitle">Выберите миф, чтобы раскрыть его тайну</p>
+
+        <div class="myths-grid">
+
+          <!--
+          ============================================================
+          КАК СОЗДАТЬ НОВУЮ КАРТОЧКУ МИФА:
+          ============================================================
+          1. Скопируйте весь блок <article class="myth-card"> ... </article>
+          2. Замените значения в data-атрибутах и содержимое карточки
+          3. Положите картинку в images/myths/имя-файла.png
+          4. Создайте отдельную страницу (скопируйте prometey-i-ogon.html)
+          5. Укажите ссылку: <a href="имя-файла.html" class="btn-read">Читать</a>
+          ============================================================
+          -->
+
+          <article class="myth-card">
+            <img class="myth-card-image" src="images/myths/myth-thanatos-eros.png" alt="Танатос и Эрос" loading="lazy">
+            <div class="myth-card-body">
+              <p class="myth-card-culture">Древняя Греция</p>
+              <h3 class="myth-card-title">Танатос и Эрос</h3>
+              <p class="myth-card-desc">Бог смерти и бог любви — две силы, управляющие судьбой смертных.</p>
+              <p class="myth-card-author">Автор: <span>Греческая мифология</span></p>
+              <a href="thanatos-i-eros.html" class="btn-read">Читать</a>
+            </div>
+          </article>
+
+          <article class="myth-card">
+            <img class="myth-card-image" src="images/myths/myth-valhalla.png" alt="Песня о Вальхалле" loading="lazy">
+            <div class="myth-card-body">
+              <p class="myth-card-culture">Скандинавия</p>
+              <h3 class="myth-card-title">Песня о Вальхалле</h3>
+              <p class="myth-card-desc">Зал павших героев, где Один готовит воинов к последней битве.</p>
+              <p class="myth-card-author">Автор: <span>Старшая Эдда</span></p>
+              <a href="pesnya-o-valhalle.html" class="btn-read">Читать</a>
+            </div>
+          </article>
+
+          <article class="myth-card">
+            <img class="myth-card-image" src="images/myths/myth-anubis.png" alt="Анубис и Весы Сердца" loading="lazy">
+            <div class="myth-card-body">
+              <p class="myth-card-culture">Древний Египет</p>
+              <h3 class="myth-card-title">Анубис и Весы Сердца</h3>
+              <p class="myth-card-desc">Суд над душой: сердце умершего взвешивается против пера истины.</p>
+              <p class="myth-card-author">Автор: <span>Книга мёртвых</span></p>
+              <a href="anubis-i-vesy.html" class="btn-read">Читать</a>
+            </div>
+          </article>
+
+          <article class="myth-card">
+            <img class="myth-card-image" src="images/myths/myth-bagira.png" alt="Кот Багира" loading="lazy">
+            <div class="myth-card-body">
+              <p class="myth-card-culture">Индия</p>
+              <h3 class="myth-card-title">Кот Багира</h3>
+              <p class="myth-card-desc">Мудрая чёрная пантера — наставник и защитник мальчика Маугли.</p>
+              <p class="myth-card-author">Автор: <span>Редьярд Киплинг</span></p>
+              <a href="kot-bagira.html" class="btn-read">Читать</a>
+            </div>
+          </article>
+
+          <article class="myth-card">
+            <img class="myth-card-image" src="images/myths/myth-mulan.png" alt="Хуа-Мулан" loading="lazy">
+            <div class="myth-card-body">
+              <p class="myth-card-culture">Древний Китай</p>
+              <h3 class="myth-card-title">Хуа-Мулан</h3>
+              <p class="myth-card-desc">Девушка-воительница, двенадцать лет сражавшаяся вместо отца.</p>
+              <p class="myth-card-author">Автор: <span>Баллада о Мулан</span></p>
+              <a href="hua-mulan.html" class="btn-read">Читать</a>
+            </div>
+          </article>
+
+          <article class="myth-card">
+            <img class="myth-card-image" src="images/myths/myth-prometey.png" alt="Прометей и огонь" loading="lazy">
+            <div class="myth-card-body">
+              <p class="myth-card-culture">Древняя Греция</p>
+              <h3 class="myth-card-title">Прометей и огонь</h3>
+              <p class="myth-card-desc">Титан, укравший божественный огонь для людей и принявший вечное наказание.</p>
+              <p class="myth-card-author">Автор: <span>Гесиод</span></p>
+              <a href="prometey-i-ogon.html" class="btn-read">Читать</a>
+            </div>
+          </article>
+
+          <article class="myth-card">
+            <img class="myth-card-image" src="images/myths/myth-graal.png" alt="Камелот и Святой Грааль" loading="lazy">
+            <div class="myth-card-body">
+              <p class="myth-card-culture">Артуриана</p>
+              <h3 class="myth-card-title">Камелот и Святой Грааль</h3>
+              <p class="myth-card-desc">Рыцари Круглого стола в поисках священной чаши божественной благодати.</p>
+              <p class="myth-card-author">Автор: <span>Томас Малори</span></p>
+              <a href="kamelot-i-graal.html" class="btn-read">Читать</a>
+            </div>
+          </article>
+
+          <article class="myth-card">
+            <img class="myth-card-image" src="images/myths/myth-inanna.png" alt="Инанна и Подземный Мир" loading="lazy">
+            <div class="myth-card-body">
+              <p class="myth-card-culture">Шумер</p>
+              <h3 class="myth-card-title">Инанна и Подземный Мир</h3>
+              <p class="myth-card-desc">Богиня спускается в царство мёртвых и возвращается, заплатив страшную цену.</p>
+              <p class="myth-card-author">Автор: <span>Шумерский эпос</span></p>
+              <a href="inanna-i-podzemny-mir.html" class="btn-read">Читать</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+      <p>Библиотека мифов, 2026</p>
+    </footer>
+
+  </div>
+
+  <!-- ========== МОДАЛЬНОЕ ОКНО ========== -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal">
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+      <img class="modal-image" src="" alt="">
+      <div class="modal-content">
+        <p class="modal-culture"></p>
+        <h2 class="modal-title" id="modal-title"></h2>
+        <p class="modal-author"></p>
+        <div class="modal-text"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
